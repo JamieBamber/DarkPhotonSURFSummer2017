@@ -10,7 +10,7 @@ some files for the BSMatLHC / BSMGen package provided by Dr Pierini
 
 some more useful scripts are located in my lxplus directory /afs/cern.ch/user/j/jbamber/public
 
-For background samples ask Dr Si Xie. The output of my DarkPhotonAnalyzer RazorAnalyzer goes to /eos/cms/store/group/phys_susy/razor/Run2Analysis/DarkPhotonAnalyzer/ 
+For background samples ask Dr Si Xie. The output of my DarkPhotonAnalyzer RazorAnalyzer goes to /eos/cms/store/group/phys_susy/razor/Run2Analysis/DarkPhotonAnalyzer/ and I also used that directory to store my sample .root files
 
 
 
