@@ -1,0 +1,22 @@
+### Modified slightly from the "Directions for Future work" section of my report
+
+An important next step would be to obtain statistical estimates of the error in the signal to background ratio 
+associated with a small number of events remaining post-trigger. To reduce this error you could use trigger and background 
+samples with a much larger number of initial events, although that would be more costly in terms of computing time.
+
+In addition you could try to implement more advanced statistical methods for reducing the miss-measurement of MET, 
+which contributes to the background signal, detailed in [2].
+
+One improvement would be a more complete and systematic optimization of the trigger cuts. 
+The |η_γ| cut, “no isolated leptons” cut, & cuts on the number of jets and Δφ(γ,jet) could be kept the same as a baseline, 
+then the values for the other cuts varied to reach an optimum signal to background ratio.
+
+You would also need to consider the less dominant background processes, including [1][2]
+pp → W → νe [with miss-identification of e- as γ]
+pp → W (→le)γ [l = e-, μ-, τ-]
+pp → Ζ (→ νν*)γ 
+fully determine whether detecting a dark photon using this decay would be feasible.
+
+Once feasibility is established with greater confidence you could then look at how to implement the trigger.  This would perhaps involve using data-scouting if the trigger thresholds arrived at were too low for the standard approach.  
+[2] – The CMS Collaboration; Phys. Lett. B 753 363 (Dec 2015) 
+“Search for exotic decays of a Higgs boson into undetectable particles and one or more photons” 	arXiv:1507.00359
