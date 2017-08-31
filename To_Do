@@ -5,11 +5,14 @@ associated with a small number of events remaining post-trigger. To reduce this 
 samples with a much larger number of initial events, although that would be more costly in terms of computing time.
 
 In addition you could try to implement more advanced statistical methods for reducing the miss-measurement of MET, 
-which contributes to the background signal, detailed in [2].
+which contributes to the background signal, detailed in [2]. [ Note Prof. Spiropulu says that a cut in the MET significance, 
+approximately definied as S = MET / Sqrt[scalar sum of transverse momenta of all particles in event], wouldn't be very useful 
+as for signals that SHOULD have real MET it tends to remove too much of the signal as well as the background.]
 
 One improvement would be a more complete and systematic optimization of the trigger cuts. 
 The |η_γ| cut, “no isolated leptons” cut, & cuts on the number of jets and Δφ(γ,jet) could be kept the same as a baseline, 
-then the values for the other cuts varied to reach an optimum signal to background ratio.
+then the values for the other cuts varied to reach an optimum signal to background ratio. [note the "Opt_1" files are my 
+first attempt to do this. It ran very slowly and didn't return an answer however, suggested it need some improvement]
 
 You would also need to consider the less dominant background processes, including [1][2]
 pp → W → νe [with miss-identification of e- as γ]
@@ -17,6 +20,11 @@ pp → W (→le)γ [l = e-, μ-, τ-]
 pp → Ζ (→ νν*)γ 
 fully determine whether detecting a dark photon using this decay would be feasible.
 
-Once feasibility is established with greater confidence you could then look at how to implement the trigger.  This would perhaps involve using data-scouting if the trigger thresholds arrived at were too low for the standard approach.  
+Once feasibility is established with greater confidence you could then look at how to implement the trigger. 
+This would perhaps involve using data-scouting if the trigger thresholds arrived at were too low for the standard approach.  
+
+[1] -  E Gabrielli, M Heikinheimo, B Mele and M Raidal; 
+“Dark-Photon searches via Higgs-boson production at the LHC”  Phys. Rev. D 90, 055032 (23rd Sep 2014) arXiv:1405.5196
+
 [2] – The CMS Collaboration; Phys. Lett. B 753 363 (Dec 2015) 
 “Search for exotic decays of a Higgs boson into undetectable particles and one or more photons” 	arXiv:1507.00359
