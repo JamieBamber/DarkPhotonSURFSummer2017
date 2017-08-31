@@ -1,0 +1,27 @@
+! This file contains commands to be read in for a Pythia8 run. 
+! Lines not beginning with a letter or digit are comments.
+
+! 1) Settings that could be used in a main program, if desired.
+Main:numberOfEvents = 50000       ! number of events to generate
+Main:timesAllowErrors = 30         ! max number of allowed errors
+
+! 2) LHC beams parameter settings. 
+Beams:idA = 2212                   ! first beam, p = 2212, pbar = -2212
+Beams:idB = 2212                   ! second beam, p = 2212, pbar = -2212
+Beams:eCM = 13000.                 ! CM energy of collision
+
+! 3) Settings for the hard-process generation
+HiggsSM:all = on
+
+# to switch on one process only, switch off all of them... 
+# HiggsSM:all = off
+# ... and then on what you need
+# HiggsSM:ffbar2HZ = on					// ZH production
+# HiggsSM:ffbar2HW = on					// WH production
+# HiggsSM:gg2Httbar = on				// gg fusion --> Higgs
+# HiggsSM:qqbar2Httbar = on				// Vector Boson Fusion? 
+
+# switch off all decay modes
+25::onMode = off
+# switch on only H->gamma gamma
+25:onIfMatch = 22 22
